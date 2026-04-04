@@ -4,7 +4,7 @@ import postgresLogo from "../assets/skills/Postgresql.webp.png";
 import javascriptLogo from "../assets/skills/Javascript.png";
 import htmlLogo from "../assets/skills/HTML.svg.png";
 import cssLogo from "../assets/skills/CSS.svg.png";
-import expressLogo from "../assets/skills/Expres.png";
+import expressLogo from "../assets/skills/Express.png";
 import prismaLogo from "../assets/skills/Prisma.svg";
 
 export const skills = [
@@ -15,5 +15,5 @@ export const skills = [
   { name: "Express.JS", icon: expressLogo },
   { name: "Node.JS", icon: nodeLogo },
   { name: "PostgreSQL", icon: postgresLogo },
-  { name: "Prisna", icon: prismaLogo },
+  { name: "Prisma", icon: prismaLogo },
 ];

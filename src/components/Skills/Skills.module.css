@@ -1,0 +1,21 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background);
+  color: var(--color);
+  padding: 1.2rem;
+}
+
+.skillsContainer h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 20px;
+  width: 100%;
+}
