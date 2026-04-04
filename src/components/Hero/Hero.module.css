@@ -1,0 +1,13 @@
+.hero {
+  background-color: var(--background);
+  color: var(--color);
+  padding: 1.2rem 1.2rem 1.2rem 3.2rem;
+
+  display: flex;
+  gap: 10rem;
+}
+
+.hero span {
+  color: var(--primary);
+  font-weight: 600;
+}
