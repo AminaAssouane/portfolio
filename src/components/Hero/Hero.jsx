@@ -8,20 +8,25 @@ export default function Hero() {
         <img src={image} alt="" />
       </section>
       <section className={styles.about}>
-        <h1>Hi, I'm Amina Assouane</h1>
+        <h1>
+          Hi, I'm{" "}
+          <span className="shine-wrap" data-text="Amina Assouane">
+            Amina Assouane
+          </span>
+        </h1>
 
         <h2>Full-Stack Developer</h2>
 
         <p>
-          I build modern, functional, and user-focused web applications using
-          technologies like React, Node.js, and Javascript.
+          I build modern, user-focused web applications with technologies such
+          as <span>React</span>, <span>Node.js</span>, and{" "}
+          <span>PostgreSQL</span>.
         </p>
 
         <p>
-          With a <span>Computer Science degree</span> from{" "}
-          <span>Paris Diderot University</span> and hands-on experience from{" "}
-          <span>The Odin Project</span>, I’m passionate about turning ideas into
-          real-world products.
+          I'm a <span>Computer Science graduate</span> from{" "}
+          <span>Paris Diderot University</span>, with hands-on experience from{" "}
+          <span>The Odin Project</span>.
         </p>
       </section>
     </div>

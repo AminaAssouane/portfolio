@@ -7,7 +7,15 @@
   gap: 10rem;
 }
 
-.hero span {
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p span {
   color: var(--primary);
   font-weight: 600;
 }

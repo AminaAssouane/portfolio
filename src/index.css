@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 #root {
-  font-family: "Poppins", system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 :root {
@@ -18,4 +23,46 @@
   --background: black;
   --color: white;
   --primary: #8e51ff;
+}
+
+.shine-wrap {
+  position: relative;
+  background-image: linear-gradient(
+    110deg,
+    #6442d5 0%,
+    #a855c8 50%,
+    #bd2e8f 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shine-wrap::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    110deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0) 47%,
+    rgba(255, 255, 255, 0.55) 49%,
+    rgba(255, 255, 255, 0.55) 52%,
+    rgba(255, 255, 255, 0) 54%,
+    transparent 60%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
