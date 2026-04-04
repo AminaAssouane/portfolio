@@ -1,7 +1,6 @@
 .themeSwitcher {
   border-radius: 999px;
-  background-color: none;
-
+  background-color: var(--background);
   display: flex;
   align-items: center;
 }
@@ -9,9 +8,10 @@
 .moon,
 .sun {
   border: none;
-  background-color: none;
+  background: none;
   padding: 6px 10px;
   cursor: pointer;
+  color: var(--color);
 }
 
 .moon {

@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   font-family: "Poppins", system-ui, sans-serif;
 }
