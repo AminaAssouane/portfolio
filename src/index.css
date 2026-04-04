@@ -10,5 +10,13 @@
 }
 
 :root {
+  --background: white;
+  --color: black;
   --primary: #7c3aed;
+}
+
+:root[data-theme="dark"] {
+  --background: black;
+  --color: white;
+  --primary: #8e51ff;
 }

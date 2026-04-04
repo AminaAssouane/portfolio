@@ -1,0 +1,23 @@
+.themeSwitcher {
+  border-radius: 999px;
+  background-color: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.moon,
+.sun {
+  border: none;
+  background-color: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.moon {
+  border-radius: 999px 0 0 999px;
+}
+
+.sun {
+  border-radius: 0 999px 999px 0;
+}
