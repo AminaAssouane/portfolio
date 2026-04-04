@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import image from "../../assets/images/Photo.jpg";
+import image from "../../assets/images/Photo.png";
 
 export default function Hero() {
   return (
