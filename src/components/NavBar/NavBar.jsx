@@ -1,15 +1,13 @@
 import styles from "./NavBar.module.css";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
-export default function NavBar() {
+export default function NavBar({ onAbout, onSkills }) {
   return (
     <header className={styles.header}>
-      <div className={styles.left}>
-        <ThemeSwitcher />
-      </div>
+      <div className={styles.left}>{/* <ThemeSwitcher /> */}</div>
       <div className={styles.right}>
-        <div>About</div>
-        <div>Skills</div>
+        <div onClick={onAbout}>About</div>
+        <div onClick={onSkills}>Skills</div>
         <div>Projects</div>
         <div>Contact</div>
       </div>
