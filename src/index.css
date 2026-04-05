@@ -20,7 +20,7 @@
 }
 
 :root[data-theme="dark"] {
-  --background: black;
+  --background: #282429;
   --color: white;
   --primary: #8e51ff;
 }

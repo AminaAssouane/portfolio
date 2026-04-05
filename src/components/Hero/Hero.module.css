@@ -1,21 +1,65 @@
 .hero {
   background-color: var(--background);
   color: var(--color);
-  padding: 1.2rem 1.2rem 1.2rem 3.2rem;
+  padding: 3.2rem 3.2rem;
 
   display: flex;
   gap: 10rem;
 }
 
+.hero img {
+  height: 30rem;
+  width: auto;
+}
+
 .hero h1 {
+  margin-top: 4rem;
   font-size: 4rem;
 }
 
 .hero h2 {
+  margin: 1rem 0 2rem 0;
   font-size: 3rem;
 }
 
 .hero p span {
   color: var(--primary);
   font-weight: 600;
+}
+
+.about p {
+  font-size: 1.3rem;
+}
+
+.about p,
+.about h2,
+.about h1 {
+  opacity: 0;
+  text-align: justify;
+  transform: translateY(100px);
+  animation: appear 1s forwards;
+}
+
+.about h1:nth-child(1) {
+  animation-delay: 0;
+}
+
+.about h2:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.about p:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.about p:nth-child(4) {
+  margin-top: 1.5rem;
+  animation-delay: 600ms;
+}
+
+@keyframes appear {
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 }

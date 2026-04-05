@@ -18,9 +18,8 @@ export default function Hero() {
         <h2>Full-Stack Developer</h2>
 
         <p>
-          I build modern, user-focused web applications with technologies such
-          as <span>React</span>, <span>Node.js</span>, and{" "}
-          <span>PostgreSQL</span>.
+          I build modern web applications with technologies such as{" "}
+          <span>React</span>, <span>Node.js</span>, and <span>PostgreSQL</span>.
         </p>
 
         <p>

@@ -12,7 +12,7 @@
 }
 
 .icon {
-  height: 100px; /* fixed height */
-  width: auto; /* keep aspect ratio */
+  height: 100px;
+  width: auto;
   object-fit: contain;
 }
