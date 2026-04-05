@@ -5,6 +5,7 @@ import SwanDesktop from "../assets/projects/SwanDesktop.png";
 import SwanPhone from "../assets/projects/SwanPhone.png";
 
 import DevMindsDesktop from "../assets/projects/DevMindsDesktop.png";
+import DevMindsPhone from "../assets/projects/DevMindsPhone.png";
 
 export const projects = [
   {
@@ -32,6 +33,6 @@ export const projects = [
     align: "right",
     color: "#f3c0e5",
     desktopImg: DevMindsDesktop,
-    phoneImg: null,
+    phoneImg: DevMindsPhone,
   },
 ];
