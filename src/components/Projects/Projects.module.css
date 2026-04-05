@@ -4,9 +4,16 @@
   align-items: center;
 
   color: var(--color);
+  padding: 2rem;
 }
 
 .projectsContainer h1 {
   font-size: 4rem;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

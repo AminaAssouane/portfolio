@@ -1,4 +1,6 @@
 import styles from "./Projects.module.css";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import { projects } from "../../data/projects";
 
 export default function Projects() {
   return (
@@ -9,6 +11,19 @@ export default function Projects() {
           Projects
         </span>
       </h1>
+      <div className={styles.projects}>
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            align={project.align}
+            color={project.color}
+            desktopImg={project.desktopImg}
+            phoneImg={project.phoneImg}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+
+  border-radius: 14px;
+  padding: 5rem 5rem 5rem 2rem;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.deviceMockup {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.desktopImg {
+  opacity: 0;
+  height: 20rem;
+  width: auto;
+  object-fit: contain;
+  transform: translateY(60px);
+  animation: none;
+}
+
+.phoneImg {
+  opacity: 0;
+  height: 18rem;
+  width: auto;
+  position: absolute;
+  left: 0;
+  bottom: -1.2rem;
+  transform: translateY(-60px);
+  animation: none;
+}
+
+[data-visible="true"] .desktopImg,
+[data-visible="true"] .phoneImg {
+  animation: appear 1s forwards;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.left .phoneImg {
+  left: auto;
+  right: 0;
+}
+
+@keyframes appear {
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
