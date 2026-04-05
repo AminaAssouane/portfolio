@@ -1,10 +1,10 @@
 import styles from "./Hero.module.css";
-import image from "../../assets/images/Photo.png";
+import image from "../../assets/images/PhotoDrawing.png";
 
 export default function Hero() {
   return (
     <div className={styles.hero}>
-      <section className={styles.image}>
+      <section className={styles.heroImage}>
         <img src={image} alt="" />
       </section>
       <section className={styles.about}>

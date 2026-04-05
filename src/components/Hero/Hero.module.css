@@ -7,10 +7,29 @@
   gap: 10rem;
 }
 
-.hero img {
+.heroImage {
+  position: relative;
+  display: inline-block;
+}
+
+.heroImage img {
+  display: block;
   height: 30rem;
   width: auto;
+  object-fit: cover;
+  object-position: top;
 }
+/* 
+.heroImage::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none;
+} */
 
 .hero h1 {
   margin-top: 4rem;
