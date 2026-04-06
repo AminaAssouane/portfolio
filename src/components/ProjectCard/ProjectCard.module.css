@@ -84,25 +84,10 @@
 .liveDemoIcon {
   filter: invert(1);
 }
-.liveDemoBtn:hover {
-  background-color: transparent;
-  color: black;
-  border: 2px solid black;
-}
-.liveDemoBtn:hover .liveDemoIcon {
-  filter: invert(0);
-}
 
 .githubBtn {
   border: 2px solid black;
   color: black;
-}
-.githubBtn:hover {
-  background-color: black;
-  color: white;
-}
-.githubBtn:hover .githubIcon {
-  filter: invert(1);
 }
 
 @keyframes appear {
