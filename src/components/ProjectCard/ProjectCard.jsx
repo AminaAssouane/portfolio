@@ -1,5 +1,7 @@
 import styles from "./ProjectCard.module.css";
 import useInView from "../../hooks/useInView";
+import globe from "../../assets/icons/globe.svg";
+import github from "../../assets/icons/github.svg";
 
 export default function ProjectCard({
   title,
@@ -8,9 +10,11 @@ export default function ProjectCard({
   color,
   desktopImg,
   phoneImg,
+  liveDemoLink,
+  githubLink,
 }) {
   const { ref, inView } = useInView();
-
+  console.log(title, liveDemoLink, githubLink);
   return (
     <div
       ref={ref}
@@ -21,6 +25,16 @@ export default function ProjectCard({
       <div className={styles.textSide}>
         <div className={styles.title}>{title}</div>
         <div className={styles.description}>{description}</div>
+        <div className={styles.buttons}>
+          <a href={liveDemoLink} className={styles.liveDemoBtn} target="_blank">
+            <img src={globe} alt="globe" className={styles.liveDemoIcon} />{" "}
+            <span className={styles.liveDemoName}>Live demo</span>
+          </a>
+          <a href={githubLink} className={styles.githubBtn} target="_blank">
+            <img src={github} alt="github" className={styles.githubIcon} />{" "}
+            <span className={styles.githubName}>GitHub</span>
+          </a>
+        </div>
       </div>
       <div className={styles.deviceMockup}>
         <img

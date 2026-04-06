@@ -21,6 +21,8 @@ export default function Projects() {
             color={project.color}
             desktopImg={project.desktopImg}
             phoneImg={project.phoneImg}
+            liveDemoLink={project.liveDemoLink}
+            githubLink={project.githubLink}
           />
         ))}
       </div>

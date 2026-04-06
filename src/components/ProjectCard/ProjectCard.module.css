@@ -53,6 +53,58 @@
   right: 0;
 }
 
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.buttons img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.buttons a {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.liveDemoBtn {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+.liveDemoIcon {
+  filter: invert(1);
+}
+.liveDemoBtn:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+.liveDemoBtn:hover .liveDemoIcon {
+  filter: invert(0);
+}
+
+.githubBtn {
+  border: 2px solid black;
+  color: black;
+}
+.githubBtn:hover {
+  background-color: black;
+  color: white;
+}
+.githubBtn:hover .githubIcon {
+  filter: invert(1);
+}
+
 @keyframes appear {
   100% {
     transform: translateX(0) translateY(0);

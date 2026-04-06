@@ -16,6 +16,8 @@ export const projects = [
     color: "#ADDDFF",
     desktopImg: OceanDesktop,
     phoneImg: OceanPhone,
+    liveDemoLink: "https://amina-ocean.vercel.app/",
+    githubLink: "https://github.com/AminaAssouane/ocean",
   },
   {
     title: "SWAN",
@@ -25,6 +27,8 @@ export const projects = [
     color: "#D2BBF3",
     desktopImg: SwanDesktop,
     phoneImg: SwanPhone,
+    liveDemoLink: "https://amina-swan.vercel.app/",
+    githubLink: "https://github.com/AminaAssouane/messaging-app",
   },
   {
     title: "DEVMINDS",
@@ -34,5 +38,7 @@ export const projects = [
     color: "#f3c0e5",
     desktopImg: DevMindsDesktop,
     phoneImg: DevMindsPhone,
+    liveDemoLink: "https://devminds-client.vercel.app/",
+    githubLink: "https://github.com/AminaAssouane/blog-client",
   },
 ];
