@@ -62,13 +62,8 @@ export default function Contact() {
           </div>
         </div>
         <div id="contact" className={styles.contactForm}>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="contact__form"
-            noValidate
-          >
-            <div className="contact__field">
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <div>
               <div className={styles.label}>Name</div>
               <input
                 type="text"
@@ -79,7 +74,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="contact__field">
+            <div>
               <div className={styles.label}>Email</div>
               <input
                 type="email"
@@ -90,7 +85,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="contact__field">
+            <div>
               <div className={styles.label}>Message</div>
               <textarea
                 name="message"
