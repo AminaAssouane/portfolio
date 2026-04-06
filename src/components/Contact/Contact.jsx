@@ -69,54 +69,55 @@ export default function Contact() {
             noValidate
           >
             <div className="contact__field">
-              <label className="contact__label-field">Name</label>
+              <div className={styles.label}>Name</div>
               <input
                 type="text"
                 name="from_name"
                 placeholder="Your name"
                 required
-                className="contact__input"
+                className={styles.contactInput}
               />
             </div>
 
             <div className="contact__field">
-              <label className="contact__label-field">Email</label>
+              <div className={styles.label}>Email</div>
               <input
                 type="email"
                 name="reply_to"
                 placeholder="your@email.com"
                 required
-                className="contact__input"
+                className={styles.contactInput}
               />
             </div>
 
             <div className="contact__field">
-              <label className="contact__label-field">Message</label>
+              <div className={styles.label}>Message</div>
               <textarea
                 name="message"
                 placeholder="Message"
                 required
-                rows={5}
-                className="contact__textarea"
+                rows={4}
+                className={styles.textarea}
               />
             </div>
 
             <button
               type="submit"
               disabled={status === "sending"}
-              className={`contact__button ${status === "sending" ? "contact__button--sending" : ""}`}
+              className={styles.button}
             >
+              <Send />
               {status === "sending" ? "Sending…" : "Send message"}
             </button>
           </form>
 
           {status === "success" && (
-            <div className="contact__feedback contact__feedback--success">
+            <div className={styles.contactFeedback}>
               Message sent! I'll be in touch soon.
             </div>
           )}
           {status === "error" && (
-            <div className="contact__feedback contact__feedback--error">
+            <div className={styles.contactFeedback}>
               Something went wrong. Please try again or email me directly.
             </div>
           )}

@@ -8,6 +8,7 @@
 .contactContainer {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   gap: 10rem;
   width: 100%;
 }
@@ -25,12 +26,11 @@ h1 {
   color: var(--primary);
 }
 
-p {
-  margin-bottom: 1rem;
-}
-
 .contactInfo {
-  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .field {
@@ -38,9 +38,10 @@ p {
   gap: 1rem;
   align-items: center;
 
-  border: 1px solid var(--color);
+  border: 1px solid gray;
+  background-color: rgb(235, 233, 233);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border-radius: 12px;
 }
 
@@ -54,8 +55,78 @@ p {
   color: var(--primary);
 }
 
+.fieldContent {
+  font-size: 0.9rem;
+}
+
+/* Contact Form */
+
 .contactForm {
   display: flex;
   flex-direction: column;
-  width: 50%;
+
+  flex: 1;
+  border: 1px solid gray;
+  background-color: rgb(235, 233, 233);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.label {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--primary);
+}
+
+.contactInput {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.textarea {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    110deg,
+    #6442d5 0%,
+    #a855c8 50%,
+    #bd2e8f 100%
+  );
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.contactFeedback {
+  margin-top: 0.8rem;
+  text-align: center;
 }
