@@ -16,13 +16,15 @@
 :root {
   --background: white;
   --color: #333438;
-  --primary: #7c3aed;
+  --primary: #6e45d2;
+  --secondary: #b9359a;
 }
 
 :root[data-theme="dark"] {
   --background: #282429;
   --color: white;
   --primary: #8e51ff;
+  --secondary: #b9359a;
 }
 
 .shine-wrap {

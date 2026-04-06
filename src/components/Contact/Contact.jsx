@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const SERVICE_ID = "service_1ymvn8c";
 const TEMPLATE_ID = "template_n41q6zh";
@@ -32,12 +33,33 @@ export default function Contact() {
       </h1>
       <div className={styles.contactContainer}>
         <div className={styles.contactInfo}>
-          <div>Email : </div>
-          <div>minassouane@gmail.com</div>
-          <div>Phone number : </div>
-          <div>+213 697 23 66 67</div>
-          <div>Location : </div>
-          <div>Algiers, Algeria</div>
+          <h2>Let's Work Together</h2>
+          <p>
+            I'm always open to new opportunities, collaborations, and projects.
+            Whether you have a question, a proposal, or just want to say hi,
+            feel free to reach out.
+          </p>
+          <div className={styles.field}>
+            <Mail />
+            <div>
+              <div className={styles.fieldName}>Email</div>
+              <div className={styles.fieldContent}>minassouane@gmail.com</div>
+            </div>
+          </div>
+          <div className={styles.field}>
+            <Phone />
+            <div>
+              <div className={styles.fieldName}>Phone number </div>
+              <div className={styles.fieldContent}>+213 697 23 66 67</div>
+            </div>
+          </div>
+          <div className={styles.field}>
+            <MapPin />
+            <div>
+              <div className={styles.fieldName}>Location</div>
+              <div className={styles.fieldContent}>Algiers, Algeria</div>
+            </div>
+          </div>
         </div>
         <div id="contact" className={styles.contactForm}>
           <form
@@ -72,7 +94,7 @@ export default function Contact() {
               <label className="contact__label-field">Message</label>
               <textarea
                 name="message"
-                placeholder="Tell me about your project…"
+                placeholder="Message"
                 required
                 rows={5}
                 className="contact__textarea"
