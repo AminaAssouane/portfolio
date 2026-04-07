@@ -9,8 +9,11 @@
 }
 
 .title {
+  all: unset;
+  display: inline-block;
   font-size: 3rem;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .deviceMockup {

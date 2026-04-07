@@ -23,7 +23,9 @@ export default function ProjectCard({
       style={{ background: color }}
     >
       <div className={styles.textSide}>
-        <div className={styles.title}>{title}</div>
+        <a href={liveDemoLink} className={styles.title} target="_blank">
+          {title}
+        </a>
         <div className={styles.description}>{description}</div>
         <div className={styles.buttons}>
           <a href={liveDemoLink} className={styles.liveDemoBtn} target="_blank">
