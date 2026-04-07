@@ -39,7 +39,7 @@ h1 {
   align-items: center;
 
   border: 1px solid gray;
-  background-color: rgb(235, 233, 233);
+  background-color: rgb(247, 240, 252);
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 12px;
@@ -67,7 +67,7 @@ h1 {
 
   flex: 1;
   border: 1px solid gray;
-  background-color: rgb(235, 233, 233);
+  background-color: rgb(247, 240, 252);
   border-radius: 12px;
   padding: 2rem;
 }
