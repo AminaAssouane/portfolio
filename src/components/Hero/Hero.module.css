@@ -46,6 +46,11 @@
   font-weight: 600;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
 .about p {
   font-size: 1.3rem;
 }
@@ -82,7 +87,8 @@
   font-weight: 700;
   letter-spacing: 0.12rem;
   text-transform: uppercase;
-  margin: 2rem 0 0 29.5rem;
+  margin: 2rem 0 0 0;
+  align-self: flex-end;
   border-radius: 12px;
   padding: 1rem 3rem;
   border: none;
