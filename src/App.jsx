@@ -26,7 +26,7 @@ function App() {
       />
       <main>
         <section ref={aboutRef}>
-          <Hero />
+          <Hero onContact={() => scrollTo(contactRef)} />
         </section>
         <section ref={skillsRef}>
           <Skills />

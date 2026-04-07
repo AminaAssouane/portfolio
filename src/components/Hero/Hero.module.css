@@ -32,7 +32,7 @@
 } */
 
 .hero h1 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-size: 4rem;
 }
 
@@ -52,7 +52,8 @@
 
 .about p,
 .about h2,
-.about h1 {
+.about h1,
+.about button {
   opacity: 0;
   text-align: justify;
   transform: translateY(100px);
@@ -74,6 +75,26 @@
 .about p:nth-child(4) {
   margin-top: 1.5rem;
   animation-delay: 600ms;
+}
+
+.about button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  margin: 2rem 0 0 29.5rem;
+  border-radius: 12px;
+  padding: 1rem 3rem;
+  border: none;
+  color: white;
+  background-image: linear-gradient(
+    110deg,
+    #6442d5 0%,
+    #a855c8 50%,
+    #bd2e8f 100%
+  );
+  cursor: pointer;
+  animation-delay: 800ms;
 }
 
 @keyframes appear {
