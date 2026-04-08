@@ -1,16 +1,12 @@
 import styles from "./NavBar.module.css";
-import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 export default function NavBar({ onAbout, onSkills, onProjects, onContact }) {
   return (
     <header className={styles.header}>
-      <div className={styles.left}></div>
-      <div className={styles.right}>
-        <div onClick={onAbout}>About</div>
-        <div onClick={onSkills}>Skills</div>
-        <div onClick={onProjects}>Projects</div>
-        <div onClick={onContact}>Contact</div>
-      </div>
+      <div onClick={onAbout}>About</div>
+      <div onClick={onSkills}>Skills</div>
+      <div onClick={onProjects}>Projects</div>
+      <div onClick={onContact}>Contact</div>
     </header>
   );
 }
