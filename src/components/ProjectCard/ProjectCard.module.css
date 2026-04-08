@@ -99,3 +99,28 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
+    width: 100%;
+  }
+
+  .desktopImg {
+    height: 13rem;
+  }
+  .phoneImg {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .buttons {
+  }
+}
