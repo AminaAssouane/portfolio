@@ -26,4 +26,8 @@
     margin-bottom: 2rem;
     text-align: center;
   }
+
+  .projectsContainer {
+    padding: 2rem 3rem;
+  }
 }
