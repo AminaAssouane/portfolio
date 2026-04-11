@@ -1,6 +1,7 @@
 import useInView from "../../hooks/useInView";
 import globe from "../../assets/icons/globe.svg";
 import github from "../../assets/icons/github.svg";
+import "./ProjectCard.css";
 
 export default function ProjectCard({
   title,
@@ -13,28 +14,77 @@ export default function ProjectCard({
   githubLink,
 }) {
   const { ref, inView } = useInView();
-  console.log(title, liveDemoLink, githubLink);
+
   return (
-    <div ref={ref} class="" data-visible={inView} style={{ background: color }}>
-      <div class="">
-        <a href={liveDemoLink} class="" target="_blank">
+    <div
+      ref={ref}
+      style={{ background: color }}
+      className={`
+        flex justify-between gap-20 rounded-[14px] p-20 leading-relaxed
+        ${align === "left" ? "flex-row-reverse" : ""}
+        max-sm:flex-col max-sm:p-8 max-sm:gap-8
+      `}
+    >
+      <div>
+        <a
+          href={liveDemoLink}
+          target="_blank"
+          className="inline-block text-[3rem] mb-8 cursor-pointer
+                     max-sm:text-[2.8rem] max-sm:mb-4"
+        >
           {title}
         </a>
-        <div class="">{description}</div>
-        <div class="">
-          <a href={liveDemoLink} class="" target="_blank">
-            <img src={globe} alt="globe" clas="" />{" "}
-            <span class="">Live demo</span>
+
+        <div>{description}</div>
+
+        <div className="flex gap-4 mt-8 text-sm">
+          <a
+            href={liveDemoLink}
+            target="_blank"
+            className="flex items-center gap-1 px-4 py-2 rounded-full
+                       bg-black text-white border-2 border-black"
+          >
+            <img src={globe} className="h-6 w-auto invert" />
+            <span>Live demo</span>
           </a>
-          <a href={githubLink} class="" target="_blank">
-            <img src={github} alt="github" class="" />{" "}
-            <span class="">GitHub</span>
+
+          <a
+            href={githubLink}
+            target="_blank"
+            className="flex items-center gap-1 px-4 py-2 rounded-full
+                       border-2 border-black text-black"
+          >
+            <img src={github} className="h-6 w-auto" />
+            <span>GitHub</span>
           </a>
         </div>
       </div>
-      <div class="">
-        <img src={desktopImg} alt={`${title} desktop`} class="" />
-        <img src={phoneImg} alt={`${title} mobile`} class="" />
+
+      <div className="relative flex items-end shrink-0">
+        <img
+          data-visible={inView}
+          src={desktopImg}
+          alt={`${title} desktop`}
+          className={` 
+            opacity-0
+            h-80 w-auto object-contain
+            data-[visible=true]:animate-appear-up
+            max-sm:h-52
+          `}
+        />
+
+        <img
+          data-visible={inView}
+          src={phoneImg}
+          alt={`${title} mobile`}
+          className={` 
+            opacity-0
+            h-72 absolute bottom-[-1.2rem]
+            ${align === "left" ? "right-0" : "left-0"}
+            data-[visible=true]:animate-appear-down
+            max-sm:h-40
+          `}
+        />
       </div>
     </div>
   );

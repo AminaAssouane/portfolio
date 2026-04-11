@@ -1,0 +1,30 @@
+@keyframes appear-up {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-down {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .animate-appear-up {
+    animation: appear-up 1.5s forwards;
+  }
+  .animate-appear-down {
+    animation: appear-down 1.5s forwards;
+  }
+}
