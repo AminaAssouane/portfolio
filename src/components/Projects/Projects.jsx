@@ -7,7 +7,7 @@ export default function Projects() {
     <div className={styles.projectsContainer}>
       <h1>
         Featured{" "}
-        <span className="shine-wrap" data-text="Projects">
+        <span className="shine-wrap inline-block" data-text="Projects">
           Projects
         </span>
       </h1>

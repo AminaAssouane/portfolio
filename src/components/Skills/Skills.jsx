@@ -7,7 +7,7 @@ export default function Skills() {
     <div className={styles.skillsContainer}>
       <h1>
         My{" "}
-        <span className="shine-wrap" data-text="Skills">
+        <span className="shine-wrap inline-block" data-text="Skills">
           Skills
         </span>
       </h1>

@@ -10,7 +10,7 @@ export default function Hero({ onContact }) {
       <section className={styles.about}>
         <h1>
           Hi, I'm{" "}
-          <span className="shine-wrap" data-text="Amina Assouane">
+          <span className="shine-wrap inline-block" data-text="Amina Assouane">
             Amina Assouane
           </span>
         </h1>
