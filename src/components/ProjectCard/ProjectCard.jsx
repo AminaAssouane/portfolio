@@ -68,7 +68,7 @@ export default function ProjectCard({
           className={` 
             opacity-0
             h-80 w-auto object-contain
-            data-[visible=true]:animate-appear-up
+    ${inView ? "animate-appear-up" : ""}
             max-sm:h-52
           `}
         />
@@ -81,7 +81,7 @@ export default function ProjectCard({
             opacity-0
             h-72 absolute bottom-[-1.2rem]
             ${align === "left" ? "right-0" : "left-0"}
-            data-[visible=true]:animate-appear-down
+    ${inView ? "animate-appear-down" : ""}
             max-sm:h-40
           `}
         />

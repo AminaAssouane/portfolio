@@ -20,11 +20,9 @@
   }
 }
 
-@layer utilities {
-  .animate-appear-up {
-    animation: appear-up 1.5s forwards;
-  }
-  .animate-appear-down {
-    animation: appear-down 1.5s forwards;
-  }
+.animate-appear-up {
+  animation: appear-up 1.5s forwards;
+}
+.animate-appear-down {
+  animation: appear-down 1.5s forwards;
 }
