@@ -23,6 +23,11 @@
   --secondary: #b9359a;
 }
 
+h1,
+h2 {
+  font-weight: bold;
+}
+
 .shine-wrap {
   position: relative;
   background-image: linear-gradient(
