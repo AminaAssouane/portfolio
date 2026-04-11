@@ -10,15 +10,16 @@
 .heroImage {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 
-.heroImage img {
+.heroImage > img {
   display: block;
   height: 30rem;
   width: auto;
-  object-fit: cover;
   object-position: top;
 }
+
 /* 
 .heroImage::after {
   content: "";
