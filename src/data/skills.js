@@ -6,14 +6,17 @@ import htmlLogo from "../assets/skills/HTML.svg.png";
 import cssLogo from "../assets/skills/CSS.svg.png";
 import expressLogo from "../assets/skills/Express.png";
 import prismaLogo from "../assets/skills/Prisma.svg";
+import typescriptLogo from "../assets/skills/typescriptLogo.png";
+import nextjsLogo from "../assets/skills/nextjsLogo.webp";
+import tailwindcssLogo from "../assets/skills/tailwindcss.svg.webp";
 
 export const skills = [
-  { name: "Javascript", icon: javascriptLogo },
+  { name: "TypeScript", icon: typescriptLogo },
   { name: "React", icon: reactLogo },
-  { name: "HTML", icon: htmlLogo },
-  { name: "CSS", icon: cssLogo },
-  { name: "Express.JS", icon: expressLogo },
-  { name: "Node.JS", icon: nodeLogo },
+  { name: "Next.js", icon: nextjsLogo },
+  { name: "TailwindCSS", icon: tailwindcssLogo },
+  { name: "JavaScript", icon: javascriptLogo },
+  { name: "Node.js", icon: nodeLogo },
   { name: "PostgreSQL", icon: postgresLogo },
-  { name: "Prisma", icon: prismaLogo },
+  { name: "Express.js", icon: expressLogo },
 ];
