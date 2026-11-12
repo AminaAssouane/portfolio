@@ -7,7 +7,21 @@ import SwanPhone from "../assets/projects/SwanPhone.png";
 import DevMindsDesktop from "../assets/projects/DevMindsDesktop.png";
 import DevMindsPhone from "../assets/projects/DevMindsPhone.png";
 
+import ThiziriDesktop from "../assets/projects/ThiziriDesktop.png";
+import ThiziriPhone from "../assets/projects/ThiziriPhone.png";
+
 export const projects = [
+  {
+    title: "THIZIRI",
+    description:
+      "Thiziri is a full-stack personal health management application that allows users to centralize and manage their health information in one place. Users can maintain their health profiles, track medications and medication history, manage allergies and chronic conditions, log mood and health status updates, schedule appointments, store medical documents, and manage emergency contacts. The application also features secure authentication and Google sign-in.",
+    align: "left",
+    color: "#3EB0B6",
+    desktopImg: ThiziriDesktop,
+    phoneImg: ThiziriPhone,
+    liveDemoLink: "https://amina-thiziri.vercel.app",
+    githubLink: "https://github.com/AminaAssouane/thiziri",
+  },
   {
     title: "OCEAN",
     description:
