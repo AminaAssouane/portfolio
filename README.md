@@ -6,21 +6,11 @@ My personal developer portfolio, built to showcase my projects, technical skills
 
 ## 📸 Screenshots
 
-### Homepage
-
-![Portfolio Homepage](./screenshots/homepage.png)
-
-### Skills
-
-![Skills Section](./screenshots/skills.png)
-
-### Projects
-
-![Projects Section](./screenshots/projects.png)
-
-### Contact
-
-![Contact Section](./screenshots/contact.png)
+|                Homepage                 |                Skills                 |
+| :-------------------------------------: | :-----------------------------------: |
+| ![Homepage](./screenshots/homepage.png) |  ![Skills](./screenshots/skills.png)  |
+|              **Projects**               |              **Contact**              |
+| ![Projects](./screenshots/projects.png) | ![Contact](./screenshots/contact.png) |
 
 ## 🛠️ Tech Stack
 
