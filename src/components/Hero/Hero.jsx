@@ -19,7 +19,7 @@ export default function Hero({ onContact }) {
 
         <p>
           I build modern web applications with technologies such as{" "}
-          <span>React</span>, <span>Node.js</span>, and <span>PostgreSQL</span>.
+          <span>React</span>, <span>Next.js</span>, and <span>PostgreSQL</span>.
         </p>
 
         <p>
